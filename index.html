@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURAS BRAND STUDIO</title>
+    <meta name="description" content="Производство полного цикла: UV DTF, DTF печать, наружная реклама, корпоративные подарки. Собственное оборудование в Бишкеке. ☎️ +996 556 30-15-15">
+    <meta name="keywords" content="печать бишкек, UV DTF, DTF печать, наружная реклама, брендирование, вышивка, лазерная резка, корпоративные подарки">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://muras-brand.kg/">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="MURAS BRAND STUDIO - Печать и Брендирование">
+    <meta property="og:description" content="Производство полного цикла в Бишкеке: печать, наружная реклама, сувениры">
+    <meta property="og:image" content="https://muras-brand.kg/media/logo/white_circle.svg">
+    <meta property="og:url" content="https://muras-brand.kg/">
+    <meta property="og:type" content="website">
+    
+    <!-- Для локального бизнеса -->
+    <meta name="geo.region" content="KG-GB">
+    <meta name="geo.placename" content="Бишкек">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="media/logo/white_circle.svg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">    
+                <img src="media/logo/logo-no-text-white.svg" alt="Muras Logo" class="logo-img"/>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="./services.html" onclick="closeMenu()">Услуги</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Наши работы</a></li>
+                <li><a href="./equipment.html" onclick="closeMenu()">Оборудование и направление</a></li>
+                <li><a href="#calculator" onclick="closeMenu()">О нас</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Контакты</a></li>
+            </ul>
+            <div class="nav-contact">
+                <a href="tel:+996556301515" class="phone">+996 (556) 30-15-15</a>
+                <a href="#contact" class="cta-btn">Консультация</a>
+            </div>
+            <button class="burger-menu" id="burgerMenu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="line"></div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb-list">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
+                <a itemprop="item" href="/" class="breadcrumb-link">
+                    <span itemprop="name">Главная</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+        </ol>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <img src="media/logo/logo-no-text-white.svg" alt="" class="hero-logo">
+            <h1>BRAND STUDIO - печать UV DTF, DTF и брендирование в Бишкеке</h1>
+            <h2>Мы создаём бренды, которые запоминаются.</h2>
+            <p>От идеи до готового продукта — дизайн, печать и производство в одном месте.
+                Брендирование, наружная реклама, корпоративные подарки и фирменный стиль — всё под ключ.
+            </p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="cta-btn">Наши работы</a>
+                <a href="#contact" class="cta-btn cta-btn-secondary">Консультация</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для видео -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" onclick="closeVideoModal()">✕</button>
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Technology Process -->
+    <div class="tech-process" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Процесс производства</h2>
+                <p class="section-subtitle">Каждый этап контролируется автоматизированными системами</p>
+            </div>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-video">
+                        <img src="media/video/embroidery-preview.jpg" alt="Подготовка макета">
+                        <div class="play-button" onclick="openVideoModal('media/video/embroidery.mp4')">▶</div>
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">01</div>
+                        <h3 class="process-title">Вышивка на ткани</h3>
+                        <p class="process-description">Профессиональная цветокоррекция и адаптация дизайна под UV DTF технологию. Автоматический расчет цветового профиля.</p>
+                    </div>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-video">
+                        <img src="media/video/dtf-preview.jpg" alt="UV печать">
+                        <div class="play-button" onclick="openVideoModal('media/video/dtf.mov')">▶</div>
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">02</div>
+                        <h3 class="process-title">DTF печать</h3>
+                        <p class="process-description">Печать на специальной пленке с мгновенной полимеризацией под UV лампами. Разрешение до 1440x1440 dpi.</p>
+                    </div>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-video">
+                        <img src="media/video/uv-preview.jpg" alt="Нанесение адгезива">
+                        <div class="play-button" onclick="openVideoModal('media/video/uv.mp4')">▶</div>
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">03</div>
+                        <h3 class="process-title">UV печать</h3>
+                        <p class="process-description">Автоматическое нанесение термоактивируемого клеевого слоя для максимальной адгезии к любым поверхностям.</p>
+                    </div>
+                </div>
+                
+                <div class="process-card">
+                    <div class="process-video">
+                        <img src="media/video/laser-cutting-preview.jpg" alt="Контроль качества">
+                        <div class="play-button" onclick="openVideoModal('media/video/laser-cutting.mp4')">▶</div>
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">04</div>
+                        <h3 class="process-title">Лазерная резка</h3>
+                        <p class="process-description">Проверка каждого изделия на специальном оборудовании. Тестирование на устойчивость к внешним воздействиям.</p>
+                    </div>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-video">
+                        <img src="media/video/auto-towermp-preview.jpg" alt="Контроль качества">
+                        <div class="play-button" onclick="openVideoModal('media/video/auto-towermp4.mp4')">▶</div>
+                    </div>
+                    <div class="process-content">
+                        <div class="process-number">05</div>
+                        <h3 class="process-title">Авто-вышка</h3>
+                        <p class="process-description">Проверка каждого изделия на специальном оборудовании. Тестирование на устойчивость к внешним воздействиям.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Examples -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши работы</h2>
+                <p class="section-subtitle">Реальные проекты, выполненные командой MURAS BRAND STUDIO по странам СНГ</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="media/muras03.jpg" alt="Вывеска для IT-компании" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Вывеска для IT-компании</h4>
+                                <p>UV DTF на нержавеющей стали • 500×200 мм</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="textile">
+                    <div class="portfolio-image">
+                        <img src="media/muras04.jpg" alt="Корпоративная футболка с логотипом" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Корпоративная одежда</h4>
+                                <p>Термотрансферы на полиэстере • 500 шт.</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="automotive">
+                    <div class="portfolio-image">
+                        <img src="media/muras05.jpg" alt="Брендинг автомобиля службы доставки" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Брендинг автопарка</h4>
+                                <p>UV DTF на кузове • 15 автомобилей</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="souvenirs">
+                    <div class="portfolio-image">
+                        <img src="media/muras06.jpg" alt="Корпоративные кружки с логотипом" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Корпоративные подарки</h4>
+                                <p>UV DTF на керамике • 200 кружек</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="industrial">
+                    <div class="portfolio-image">
+                        <img src="media/muras08.jpg" alt="Маркировка промышленного оборудования" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Промышленная маркировка</h4>
+                                <p>UV DTF на алюминии • Серия из 50 табличек</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="media/muras07.jpg" alt="Световые короба с UV DTF панелями" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Наружная реклама</h4>
+                                <p>UV DTF на акриле • 2×1 м световые короба</p>
+                            </div>
+                            <button class="portfolio-zoom">
+                                <img src="media/icons/search.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="#contact" class="cta-btn">Обсудить ваш проект</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Gallery -->
+    <section class="equipment" id="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Производственное оборудование</h2>
+                <p class="section-subtitle">Современные станки ведущих мировых производителей</p>
+            </div>
+            
+            <div class="equipment-slider">
+                <div class="equipment-track">
+                    <div class="equipment-slide">
+                        <img src="media/muras104.jpg" alt="Макросъемка качества печати">
+                        <div>
+                            <h3>UV DTF Принтер</h3>
+                            <p>Промышленного класса</p>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <img src="media/muras105.jpg" alt="Макросъемка качества печати">
+                        <div>
+                            <h3>Система нанесения адгезива</h3>
+                            <p>Автоматизированный процесс</p>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <img src="media/muras01.jpg" alt="Макросъемка качества печати">
+                        <div>
+                            <h3>Программный термопресс</h3>
+                            <p>Точное управление температурой</p>
+                        </div>
+                    </div>
+                    <div class="equipment-slide">
+                        <img src="media/muras102.jpg" alt="Макросъемка качества печати">
+                        <div>
+                            <h3>Контроль качества</h3>
+                            <p>Тестирование каждого изделия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-nav">
+                <div class="slider-dot active" onclick="showEquipment(0)"></div>
+                <div class="slider-dot" onclick="showEquipment(1)"></div>
+                <div class="slider-dot" onclick="showEquipment(2)"></div>
+                <div class="slider-dot" onclick="showEquipment(3)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">О НАС</h2>
+            </div>
+            
+            <div class="about-intro">
+                <p>MURAS BRAND STUDIO — это современная производственная студия полного цикла, где соединяются технологии, креатив и качество. Мы создаём брендинг, наружную рекламу, корпоративные подарки и визуальные решения, которые помогают компаниям выделяться и запоминаться.</p>
+            </div>
+            
+            <div class="about-features">
+                <div class="features-title">
+                    <img src="media/icons/idea.png" alt="" class="icon-about">
+                    <h3 class="about-subtitle">Что нас отличает</h3>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="media/icons/manufacture.png" alt="" class="icon-about">
+                        </div>
+                        <h4>Собственное производство</h4>
+                        <p>У нас есть полный комплект профессионального оборудования: DTF, UV DTF, UV планшетная печать, лазерная резка, компьютерная вышивка, высокоточная печать и автовышка для монтажа.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="media/icons/key.png" alt="" class="icon-about">
+                        </div>
+                        <h4>Работа под ключ</h4>
+                        <p>От разработки дизайна до монтажа готового проекта.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="media/icons/check.png" alt="" class="icon-about">
+                        </div>
+                        <h4>Контроль качества</h4>
+                        <p>Каждый заказ проходит проверку на всех этапах: печать, сборка, упаковка, установка.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="media/icons/shield.png" alt="" class="icon-about">
+                        </div>
+                        <h4>Опыт и надёжность</h4>
+                        <p>Нам доверяют крупнейшие компании Кыргызстана: MBank, Royal Central Park, ORDO Group, Flagman, Samsung Kyrgyzstan и другие.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="media/icons/2-users.png" alt="" class="icon-about">
+                        </div>
+                        <h4>Команда профессионалов</h4>
+                        <p>Дизайнеры, мастера и монтажники, объединённые одной целью — создавать результат, который вызывает гордость.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-mission">
+                <div class="mission-card">
+                    <h3>Наша миссия</h3>
+                    <p>Делать бренды видимыми, продукты узнаваемыми, а бизнес наших клиентов — успешным и запоминающимся.</p>
+                </div>
+                
+                <div class="mission-card">
+                    <h3>Наш принцип</h3>
+                    <p>Каждый проект для нас — это искусство. Мы подходим к делу с вниманием, любовью к деталям и уважением к клиенту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Техническая поддержка</h2>
+                    <p>Наши инженеры помогут выбрать оптимальное решение для вашего проекта</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/phone-call.png" alt="" class="icon">
+                            </div>
+                            <span>+996 (556) 30-15-15</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/mail.png" alt="" class="icon">
+                            </div>
+                            <span>muras.brand@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/workplace.png" alt="" class="icon">
+                            </div>
+                            <span>г. Бишкек, М. Фрунзе 147</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/time.png" alt="" class="icon">
+                            </div>
+                            <span>Пн-Пт: 08:00-20:00, Сб: 09:00-18:00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 24px; color: white;">Техническая консультация</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" name="name" placeholder="Введите имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Описание проекта</label>
+                            <textarea name="message" placeholder="Опишите ваши требования к печати" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn" style="width: 100%;">Получить консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="whatsapp.js"></script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MURAS BRAND STUDIO",
+        "image": "https://muras-brand.kg/media/logo/white_circle.svg",
+        "description": "Производство полного цикла: UV DTF, DTF печать, наружная реклама, брендирование",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "М. Фрунзе 147",
+            "addressLocality": "Бишкек",
+            "addressCountry": "KG"
+        },
+        "telephone": "+996556301515",
+        "email": "muras.brand@gmail.com",
+        "openingHours": "Mo-Fr 08:00-20:00, Sa 09:00-18:00",
+        "priceRange": "$$",
+        "url": "https://muras-brand.kg",
+        "sameAs": [
+            "https://instagram.com/muras.brand",
+            "https://wa.me/996556301515"
+        ]
+        }
+    </script>
+</body>
+</html>
