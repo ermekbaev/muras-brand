@@ -243,7 +243,7 @@ function openImageModal(imgSrc, title, description) {
             <button class="video-modal-close" onclick="this.parentElement.parentElement.remove()">✕</button>
             <img src="${imgSrc}" alt="${title}" style="max-width: 90%; max-height: 80vh; border-radius: 8px;">
             <div style="text-align: center; color: white; margin-top: 20px;">
-                <h3 style="margin-bottom: 10px;     color: black;">${title}</h3>
+                <h3 style="margin-bottom: 10px; color: black;">${title}</h3>
                 <p style="color: #ccc;">${description}</p>
             </div>
         </div>
