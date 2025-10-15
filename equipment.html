@@ -3,281 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оборудование - MURAS BRAND STUDIO</title>
-    <link rel="stylesheet" href="style.css">
 
+    <!-- SEO Мета-теги -->
+    <title>Оборудование - MURAS BRAND STUDIO | Печать и брендирование</title>
+    <meta name="description" content="Оборудование и направления MURAS BRAND STUDIO: UV DTF, DTF, планшетная печать, вышивальные машины, лазерная резка, автовышка. Профессиональное оборудование для печати и брендирования.">
+    <meta name="keywords" content="оборудование, UV DTF, DTF, планшетная печать, вышивка, лазерная резка, автовышка, брендирование, сувениры, печать на ткани">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="media/logo/white_circle.svg">
+
+    <!-- Микроразметка Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MURAS BRAND STUDIO",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/media/logo/logo-no-text-white.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+996556301515",
+        "contactType": "customer service",
+        "areaServed": "KG",
+        "availableLanguage": "RU"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="logo">    
-                <img src="media/logo/logo-no-text-white.svg" alt="Muras Logo" class="logo-img"/>
+                <img src="media/logo/logo-no-text-white.svg" alt="Логотип Muras Brand Studio" class="logo-img"/>
             </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="./services.html" onclick="closeMenu()">Услуги</a></li>
-                <li><a href="./index.html#portfolio" onclick="closeMenu()">Наши работы</a></li>
-                <li><a href="./equipment.html" onclick="closeMenu()">Оборудование и направление</a></li>
-                <li><a href="./index.html#calculator" onclick="closeMenu()">О нас</a></li>
-                <li><a href="#contact" onclick="closeMenu()">Контакты</a></li>
-            </ul>
-            <div class="nav-contact">
-                <a href="tel:+996556301515" class="phone">+996 (556) 30-15-15</a>
-                <a href="#contact" class="cta-btn">Консультация</a>
-            </div>
-            <button class="burger-menu" id="burgerMenu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li itemprop="name"><a itemprop="url" href="./services.html" onclick="closeMenu()">Услуги</a></li>
+                    <li itemprop="name"><a itemprop="url" href="#portfolio" onclick="closeMenu()">Наши работы</a></li>
+                    <li itemprop="name"><a itemprop="url" href="./equipment.html" onclick="closeMenu()">Оборудование и направление</a></li>
+                    <li itemprop="name"><a itemprop="url" href="#calculator" onclick="closeMenu()">О нас</a></li>
+                    <li itemprop="name"><a itemprop="url" href="#contact" onclick="closeMenu()">Контакты</a></li>
+                </ul>
+        <div class="nav-contact">
+            <a href="tel:+996556301515" class="phone" itemprop="telephone">+996 (556) 30-15-15</a>
+            <a href="#contact" class="cta-btn">Консультация</a>
+        </div>
+        <button class="burger-menu" id="burgerMenu" onclick="toggleMenu()" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         </nav>
         <div class="line"></div>
     </header>
 
+<!-- Breadcrumbs -->
+<nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb-list">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-item">
+            <a itemprop="item" href="/" class="breadcrumb-link">
+                <span itemprop="name">Оборудование и производство</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+    </ol>
+</nav>
+
     <!-- Hero Section -->
-    <div class="hero">
+    <div class="hero-equipment">
         <div class="hero-content">
-            <img src="media/logo/white_circle.svg" alt="" class="hero-logo-service">
-            <h1>MURAS BRAND STUDIO</h1>
+            <img src="media/logo/white_circle.svg" alt="Логотип Muras Brand Studio" class="hero-logo-service">
+            <h1>Оборудование и направления MURAS BRAND STUDIO</h1>
             <p>
-                собственное производство полного цикла.
-                Мы соединяем технологии, креатив и качество, чтобы ваш бренд выглядел профессионально.
+                Современное оборудование для печати, вышивки и гравировки. Мы используем инновационные технологии, чтобы ваш бренд выглядел профессионально и надолго.
             </p>
         </div>
     </div>
-    
+
     <!-- Specifications -->
     <section class="specifications" id="specifications">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">НАШЕ ОБОРУДОВАНИЕ И НАПРАВЛЕНИЯ</h2>
+                <h2 class="section-title">Наше оборудование и направления</h2>
             </div>
             
+            <!-- UV DTF Принтер -->
             <div class="spec-grid" data-animation="left">
                 <div class="spec-content">
-                    <h3>UV DTF ПРИНТЕР</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        печатает изображение на прозрачной плёнке, которая затем переносится на твёрдые поверхности.
-                    </p>
+                    <h3>UV DTF Принтер</h3>
+                    <p><span class="spec-highlight">Что делает:</span> печатает изображение на прозрачной плёнке, которая затем переносится на твёрдые поверхности.</p>
                     <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Печать на металле, дереве, стекле, пластике, коже, акриле.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Эффект 3D и глянцевый лак.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Изображение стойкое к влаге, солнцу и царапинам.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Идеально для брендирования сувениров и подарков.</span>
-                        </li>
+                        <li><span class="spec-label">Печать на металле, дереве, стекле, пластике, коже, акриле.</span></li>
+                        <li><span class="spec-label">Эффект 3D и глянцевый лак.</span></li>
+                        <li><span class="spec-label">Изображение стойкое к влаге, солнцу и царапинам.</span></li>
+                        <li><span class="spec-label">Идеально для брендирования сувениров и подарков.</span></li>
                     </ul>
                 </div>
                 <div class="spec-visual">
-                    <img src="media/muras01.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="media/muras01.jpg" alt="UV DTF принтер печать на акриле и металле" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
             </div>
-            
+
+            <!-- DTF Принтер -->
             <div class="spec-grid" data-animation="right">
                 <div class="spec-visual">
-                    <img src="media/muras02.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="media/muras02.jpg" alt="DTF принтер печать на одежде" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
                 <div class="spec-content">
-                    <h3> DTF ПРИНТЕР</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        печатает цветные изображения на плёнке, которые потом переносятся на ткань с помощью термопресса.
-                    </p>
+                    <h3>DTF Принтер</h3>
+                    <p><span class="spec-highlight">Что делает:</span> печатает цветные изображения на плёнке, которые затем переносятся на ткань с помощью термопресса.</p>
                     <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Печать на одежде: футболки, худи, толстовки, форма.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Яркие и стойкие цвета, не выгорают и не трескаются.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Подходит для всех тканей — хлопок, флис, нейлон, плащевка.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Скорость и гибкость — можно печатать от 1 метра.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-              
-            <div class="spec-grid" data-animation="left">
-                <div class="spec-content">
-                    <h3>UV ПЛАНШЕТНЫЙ ПРИНТЕР</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        наносит изображение напрямую на любые плоские материалы.
-                    </p>
-                    <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Толщина материала до 20 см.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Печать на акриле, дереве, стекле, металле, коже, плитке.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Возможность печати с золотом, серебром, лаком и объёмным эффектом.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Изображение не стирается и не боится влаги.</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="spec-visual">
-                    <img src="media/muras01.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
-            </div>
-            
-            <div class="spec-grid" data-animation="right">
-                <div class="spec-visual">
-                    <img src="media/muras02.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
-                <div class="spec-content">
-                    <h3>ЛАЗЕРНЫЙ СТАНОК</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        режет и гравирует материалы с высокой точностью.
-                    </p>
-                    <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Работает с деревом, акрилом, кожей, пластиком, фанерой.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Идеально подходит для табличек, декора, упаковок и сувениров.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Гравирует логотипы, орнаменты, QR-коды, тексты.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Чистый рез без оплавлений, высокая скорость.</span>
-                        </li>
+                        <li><span class="spec-label">Печать на одежде: футболки, худи, толстовки, форма.</span></li>
+                        <li><span class="spec-label">Яркие и стойкие цвета, не выгорают и не трескаются.</span></li>
+                        <li><span class="spec-label">Подходит для всех тканей — хлопок, флис, нейлон, плащевка.</span></li>
+                        <li><span class="spec-label">Можно печатать от 1 метра, высокая скорость и гибкость.</span></li>
                     </ul>
                 </div>
             </div>
 
+            <!-- UV Планшетный Принтер -->
             <div class="spec-grid" data-animation="left">
                 <div class="spec-content">
-                    <h3>КОМПЬЮТЕРНАЯ ВЫШИВАЛЬНАЯ МАШИНА</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        вышивает логотипы и орнаменты на одежде, текстиле и аксессуарах.
-                    </p>
+                    <h3>UV Планшетный Принтер</h3>
+                    <p><span class="spec-highlight">Что делает:</span> наносит изображение напрямую на любые плоские материалы.</p>
                     <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">До 12 цветов нити.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Вышивка на кепках, толстовках, сумках, униформе.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Чёткая детализация и высокая скорость.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Идеально для корпоративной и спортивной одежды.</span>
-                        </li>
+                        <li><span class="spec-label">Толщина материала до 20 см.</span></li>
+                        <li><span class="spec-label">Печать на акриле, дереве, стекле, металле, коже, плитке.</span></li>
+                        <li><span class="spec-label">Возможность печати с золотом, серебром, лаком и объёмным эффектом.</span></li>
+                        <li><span class="spec-label">Изображение не стирается и не боится влаги.</span></li>
                     </ul>
                 </div>
                 <div class="spec-visual">
-                    <img src="media/muras01.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="media/muras01.jpg" alt="UV планшетная печать на акриле и дереве" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
             </div>
-            
+
+            <!-- Лазерный станок -->
             <div class="spec-grid" data-animation="right">
                 <div class="spec-visual">
-                    <img src="media/muras02.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="media/muras02.jpg" alt="Лазерная резка и гравировка" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
                 <div class="spec-content">
-                    <h3>ВЫСОКОТОЧНЫЙ ПРИНТЕР</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        Печатает изображения и макеты с исключальной точностью, высокой цветопередачей и идеальной детализацией. Используется для изготовления баннеров, наклеек, постеров, интерьерной печати и рекламных материалов.
-                    </p>
+                    <h3>Лазерный станок</h3>
+                    <p><span class="spec-highlight">Что делает:</span> режет и гравирует материалы с высокой точностью.</p>
                     <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Разрешение до 2400 dpi — идеально чёткая печать даже на мелких элементах.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Совместим с винилом, баннерной тканью, самоклейкой, бумагой и фотоплёнкой.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Цветопередача CMYK+, возможны яркие и плавные переходы.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Используется экосольвентная технология — долговечные, устойчивые к влаге и солнцу изображения.</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Подходит для внутренней и наружной рекламы, стикеров, панно и табличек.</span>
-                        </li>
+                        <li><span class="spec-label">Работает с деревом, акрилом, кожей, пластиком, фанерой.</span></li>
+                        <li><span class="spec-label">Идеально для табличек, декора, упаковок и сувениров.</span></li>
+                        <li><span class="spec-label">Гравирует логотипы, орнаменты, QR-коды, тексты.</span></li>
+                        <li><span class="spec-label">Чистый рез без оплавлений, высокая скорость.</span></li>
                     </ul>
                 </div>
             </div>
-            
+
+            <!-- Вышивальная машина -->
             <div class="spec-grid" data-animation="left">
                 <div class="spec-content">
-                    <h3>АВТОВЫШКА 12 М — МОБИЛЬНЫЙ МОНТАЖ И УДОБСТВО В ЛЮБЫХ УСЛОВИЯХ</h3>
-                    <p>
-                        <span class="spec-highlight">
-                            Что делает: 
-                        </span>
-                        Используется для монтажа наружной рекламы, установки вывесок, баннеров, освещения и других высотных работ.
-                        Позволяет безопасно поднимать людей и материалы на высоту до 12 метров.
-                    </p>
+                    <h3>Компьютерная вышивальная машина</h3>
+                    <p><span class="spec-highlight">Что делает:</span> вышивает логотипы и орнаменты на одежде, текстиле и аксессуарах.</p>
                     <ul class="spec-list">
-                        <li>
-                            <span class="spec-label">Высота подъёма</span>
-                            <span class="spec-label spec-highlight">до 12 м</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Грузоподъёмность люльки:</span>
-                            <span class="spec-label spec-highlight">до 200 кг</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Электропитание на люльке:</span>
-                            <span class="spec-label spec-highlight">есть розетка 220 В — можно подключать электроинструменты</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Питание от двигателя и автономное управление</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Стоимость:</span>
-                            <span class="spec-label spec-highlight">от 1500 сом/час</span>
-                        </li>
-                        <li>
-                            <span class="spec-label">Применение:</span>
-                            <span class="spec-label spec-highlight">установка вывесок, монтаж световых букв, подсветки, баннеров, камер и т.д.</span>
-                        </li>
+                        <li><span class="spec-label">До 12 цветов нити.</span></li>
+                        <li><span class="spec-label">Вышивка на кепках, толстовках, сумках, униформе.</span></li>
+                        <li><span class="spec-label">Чёткая детализация и высокая скорость.</span></li>
+                        <li><span class="spec-label">Идеально для корпоративной и спортивной одежды.</span></li>
                     </ul>
                 </div>
                 <div class="spec-visual">
-                    <img src="media/muras01.jpg" alt="Макросъемка качества печати"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="media/muras01.jpg" alt="Компьютерная вышивальная машина логотипы и орнаменты" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
             </div>
+
+            <!-- Автовышка -->
+            <div class="spec-grid" data-animation="right">
+                <div class="spec-visual">
+                    <img src="media/muras02.jpg" alt="Автовышка монтаж наружной рекламы" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div class="spec-content">
+                    <h3>Автовышка 12 м</h3>
+                    <p><span class="spec-highlight">Что делает:</span> позволяет безопасно выполнять монтаж наружной рекламы, вывесок и баннеров на высоте до 12 метров.</p>
+                    <ul class="spec-list">
+                        <li><span class="spec-label">Высота подъёма</span> — <span class="spec-label">до 12 м</span></li>
+                        <li><span class="spec-label">Грузоподъёмность люльки</span> — <span class="spec-label">до 200 кг</span></li>
+                        <li><span class="spec-label">Электропитание на люльке</span> — <span class="spec-label">розетка 220 В</span></li>
+                        <li><span class="spec-label">Стоимость</span> — <span class="spec-label">от 1500 сом/час</span></li>
+                        <li><span class="spec-label">Применение</span> — <span class="spec-label">установка вывесок, монтаж световых букв, баннеров и камер</span></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -292,25 +205,25 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <img src="media/icons/phone-call.png" alt="" class="icon">
+                                <img src="media/icons/phone-call.png" alt="Телефон" class="icon">
                             </div>
                             <span>+996 (556) 30-15-15</span>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <img src="media/icons/mail.png" alt="" class="icon">
+                                <img src="media/icons/mail.png" alt="Email" class="icon">
                             </div>
                             <span>muras.brand@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <img src="media/icons/workplace.png" alt="" class="icon">
+                                <img src="media/icons/workplace.png" alt="Адрес" class="icon">
                             </div>
                             <span>г. Бишкек, М. Фрунзе 147</span>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <img src="media/icons/time.png" alt="" class="icon">
+                                <img src="media/icons/time.png" alt="Часы работы" class="icon">
                             </div>
                             <span>Пн-Пт: 08:00-20:00, Сб: 09:00-18:00</span>
                         </div>
@@ -339,9 +252,21 @@
         </div>
     </section>
 
+    <!-- SEO-текст -->
+    <section class="seo-text">
+    <div class="container">
+        <h2>Оборудование и технологии MURAS BRAND STUDIO</h2>
+        <p>
+        MURAS BRAND STUDIO оснащена современным оборудованием для высокоточной печати, гравировки и производства рекламной продукции. 
+        Мы используем промышленные принтеры для DTF и UV DTF печати, лазерные станки, вышивальные машины и профессиональное монтажное оборудование. 
+        Благодаря этому обеспечиваем стабильное качество, точность и долговечность готовых изделий. 
+        Все процессы — от печати до резки и сборки — выполняются внутри нашей студии, что позволяет соблюдать сроки и гарантировать результат.
+        </p>
+    </div>
+    </section>
+
+
     <script src="script.js"></script>
     <script src="whatsapp.js"></script>
-
-
 </body>
 </html>
