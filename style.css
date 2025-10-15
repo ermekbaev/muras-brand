@@ -125,7 +125,7 @@ span {
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -443,12 +443,17 @@ span {
 }
 
 .process-card {
-  background: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 6px solid #881df2;
+
+  background: linear-gradient(
+    135deg,
+    rgba(136, 29, 242, 0.1) 0%,
+    rgba(136, 29, 242, 0.05) 100%
+  );
+  border: 1px solid rgba(136, 29, 242, 0.3);
 }
 
 .process-card:hover {
@@ -467,9 +472,10 @@ span {
 
 .process-video img {
   grid-area: 1 / 1;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .play-button {
@@ -511,10 +517,11 @@ span {
 .process-title {
   font-size: 24px;
   font-weight: 500;
+  color: #fff;
 }
 
 .process-description {
-  color: #666;
+  color: #cbc1c1;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -560,6 +567,7 @@ span {
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.4s ease;
+  border: 4px solid #881df2;
 }
 
 .portfolio-item.hidden {
@@ -1337,7 +1345,7 @@ span {
 
   /* Hero */
   .hero {
-    padding: 100px 20px 40px;
+    padding: 0 20px 40px;
   }
 
   .hero h1 {

@@ -219,35 +219,51 @@ function filterPortfolio(category) {
   });
 }
 
-// Portfolio zoom functionality
-document.querySelectorAll(".portfolio-zoom").forEach((btn) => {
-  btn.addEventListener("click", function () {
-    const item = this.closest(".portfolio-item");
-    const title = item.querySelector(".portfolio-info h4").textContent;
-    const description = item.querySelector(".portfolio-info p").textContent;
-    const imageSrc = item.querySelector(".portfolio-img").src;
+// Открытие изображений портфолио в полный экран
+document.querySelectorAll(".portfolio-zoom").forEach((button) => {
+  button.addEventListener("click", function (e) {
+    e.stopPropagation();
 
-    const modal = document.createElement("div");
-    modal.className = "portfolio-modal";
+    const portfolioItem = this.closest(".portfolio-item");
+    const img = portfolioItem.querySelector(".portfolio-img");
+    const title = portfolioItem.querySelector(".portfolio-info h3").textContent;
+    const description =
+      portfolioItem.querySelector(".portfolio-info p").textContent;
 
-    const modalContent = document.createElement("div");
-    modalContent.className = "portfolio-modal-content";
-
-    modalContent.innerHTML = `
-      <img src="${imageSrc}" alt="${title}" style="max-width: 100%; max-height: 70vh; border-radius: 8px; margin-bottom: 20px;">
-      <h3>${title}</h3>
-      <p style="margin: 10px 0; color: #666;">${description}</p>
-      <p style="font-size: 14px; color: #999;">Нажмите в любом месте, чтобы закрыть</p>
-    `;
-
-    modal.appendChild(modalContent);
-    document.body.appendChild(modal);
-
-    modal.addEventListener("click", () => {
-      document.body.removeChild(modal);
-    });
+    openImageModal(img.src, title, description);
   });
 });
+
+function openImageModal(imgSrc, title, description) {
+  // Создаем модальное окно
+  const modal = document.createElement("div");
+  modal.className = "portfolio-modal";
+  modal.innerHTML = `
+        <div class="portfolio-modal-content" onclick="event.stopPropagation()">
+            <button class="video-modal-close" onclick="this.parentElement.parentElement.remove()">✕</button>
+            <img src="${imgSrc}" alt="${title}" style="max-width: 90%; max-height: 80vh; border-radius: 8px;">
+            <div style="text-align: center; color: white; margin-top: 20px;">
+                <h3 style="margin-bottom: 10px;     color: black;">${title}</h3>
+                <p style="color: #ccc;">${description}</p>
+            </div>
+        </div>
+    `;
+
+  // Закрытие по клику на фон
+  modal.addEventListener("click", function () {
+    this.remove();
+  });
+
+  // Закрытие по ESC
+  document.addEventListener("keydown", function escHandler(e) {
+    if (e.key === "Escape") {
+      modal.remove();
+      document.removeEventListener("keydown", escHandler);
+    }
+  });
+
+  document.body.appendChild(modal);
+}
 
 // Initialize calculator on page load
 document.addEventListener("DOMContentLoaded", function () {
