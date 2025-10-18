@@ -21,13 +21,15 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">    
-            <img src="./media/logo/logo-no-text-white.svg" alt="Muras Logo" class="logo-img"/>
+            <a href="index.html">
+                <img src="media/logo/logo-no-text-white.svg" alt="MURAS BRAND STUDIO логотип - производство печати в Бишкеке" class="logo-img" width="70" height="70"/>
+            </a>
         </div>
         <ul class="nav-menu" id="navMenu">
             <li><a href="./services.html" onclick="closeMenu()">Услуги</a></li>
             <li><a href="./index.html#portfolio" onclick="closeMenu()">Наши работы</a></li>
             <li><a href="./equipment.html" onclick="closeMenu()">Оборудование и направление</a></li>
-            <li><a href="./index.html#calculator" onclick="closeMenu()">О нас</a></li>
+            <li><a href="./index.html#about" onclick="closeMenu()">О нас</a></li>
             <li><a href="#contact" onclick="closeMenu()">Контакты</a></li>
         </ul>
         <div class="nav-contact">
@@ -74,7 +76,7 @@
         </div>
 
         <!-- DTF печать -->
-        <article itemscope itemtype="/https://schema.org/Service" class="spec-grid" data-animation="left">
+        <article itemscope itemtype="https://schema.org/Service" class="spec-grid" data-animation="left">
             <div class="spec-content">
                 <h3 itemprop="name">ПЕЧАТЬ И ПРОИЗВОДСТВО</h3>
                 <ul class="spec-list">
@@ -190,69 +192,74 @@
     </div>
 </section> -->
 
-<!-- Contact -->
-<section class="contact" id="contact">
-    <div class="container">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <h2>Техническая поддержка</h2>
-                <p>Наши инженеры помогут выбрать оптимальное решение для вашего проекта</p>
-                
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="./media/icons/phone-call.png" alt="" class="icon">
-                        </div>
-                        <span>+996 (556) 30-15-15</span>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="./media/icons/mail.png" alt="" class="icon">
-                        </div>
-                        <span>muras.brand@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" itemscope itemtype="https://schema.org/LocalBusiness">
+                    <h2 itemprop="name">Техническая поддержка MURAS BRAND STUDIO</h2>
+                    <p itemprop="description">Наши инженеры помогут выбрать оптимальное решение для вашего проекта по UV DTF печати</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <div class="contact-icon">
-                                <img src="./media/icons/insta.png" alt="Instagram" class="icon" width="25" height="25">
+                                <img src="media/icons/phone-call.png" alt="Телефон" class="icon" width="25" height="25">
+                            </div>
+                            <a href="tel:+996556301515" itemprop="telephone" class="contact-link">+996 (556) 30-15-15</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/mail.png" alt="Email" class="icon" width="25" height="25">
+                            </div>
+                            <a href="mailto:muras.brand@gmail.com" itemprop="email" class="contact-link">muras.brand@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/insta.png" alt="Instagram" class="icon" width="25" height="25">
                             </div>
                             <a href="https://www.instagram.com/murasbrand.kg?igsh=ejM0OGNsanZpbzc5" itemprop="instagram" class="contact-link">Muras brand</a>
                         </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="./media/icons/workplace.png" alt="" class="icon">
+                        <div class="contact-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <div class="contact-icon">
+                                <img src="media/icons/workplace.png" alt="Адрес" class="icon" width="25" height="25">
+                            </div>
+                            <span>
+                                <span itemprop="addressLocality">г. Бишкек</span>, 
+                                <span itemprop="streetAddress">М. Фрунзе 147</span>
+                            </span>
                         </div>
-                        <span>г. Бишкек, М. Фрунзе 147</span>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <img src="./media/icons/time.png" alt="" class="icon">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="media/icons/time.png" alt="Время работы" class="icon" width="25" height="25">
+                            </div>
+                            <span itemprop="openingHours" content="Mo-Fr 08:00-20:00, Sa 09:00-18:00">
+                                Пн-Сб: 10:00-20:00
+                            </span>
                         </div>
-                        <span>Пн-Пт: 08:00-20:00, Сб: 09:00-18:00</span>
                     </div>
                 </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3 style="margin-bottom: 24px; color: white;">Техническая консультация</h3>
-                <form>
-                    <div class="form-group">
-                        <label>Ваше имя</label>
-                        <input type="text" name="name" placeholder="Введите имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" placeholder="your@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Описание проекта</label>
-                        <textarea name="message" placeholder="Опишите ваши требования к печати" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="cta-btn" style="width: 100%;">Получить консультацию</button>
-                </form>
+                
+                <div class="contact-form">
+                    <h3 class="contact-form-title">Техническая консультация по UV DTF печати</h3>
+                    <form aria-label="Форма обратной связи">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Введите имя" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Описание проекта</label>
+                            <textarea id="message" name="message" placeholder="Опишите ваши требования к печати" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="cta-btn" style="width: 100%;">Получить консультацию</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="seo-text">
   <div class="container">

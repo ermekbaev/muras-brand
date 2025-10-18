@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Base URL для всех относительных путей -->
-    <base href="/">
+    <base href="./">
 
     <!-- SEO Meta теги -->
     <title>MURAS BRAND STUDIO - Печать UV DTF, DTF, Наружная Реклама в Бишкеке | Брендирование</title>
@@ -42,13 +42,15 @@
 <header class="header">
     <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="logo">    
-            <img src="media/logo/logo-no-text-white.svg" alt="MURAS BRAND STUDIO логотип - производство печати в Бишкеке" class="logo-img" width="70" height="70"/>
+            <a href="index.html">
+                <img src="media/logo/logo-no-text-white.svg" alt="MURAS BRAND STUDIO логотип - производство печати в Бишкеке" class="logo-img" width="70" height="70"/>
+            </a>
         </div>
         <ul class="nav-menu" id="navMenu">
             <li itemprop="name"><a itemprop="url" href="services.html" onclick="closeMenu()">Услуги</a></li>
             <li itemprop="name"><a itemprop="url" href="#portfolio" onclick="closeMenu()">Наши работы</a></li>
             <li itemprop="name"><a itemprop="url" href="equipment.html" onclick="closeMenu()">Оборудование и направление</a></li>
-            <li itemprop="name"><a itemprop="url" href="#calculator" onclick="closeMenu()">О нас</a></li>
+            <li itemprop="name"><a itemprop="url" href="#about" onclick="closeMenu()">О нас</a></li>
             <li itemprop="name"><a itemprop="url" href="#contact" onclick="closeMenu()">Контакты</a></li>
         </ul>
         <div class="nav-contact">
@@ -79,9 +81,11 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
-        <img src="media/logo/logo-no-text-white.svg" alt="MURAS BRAND STUDIO - производство полного цикла" class="hero-logo" width="200" height="200" loading="eager">
-        <h1>MURAS BRAND STUDIO  Печать UV DTF, DTF и Брендирование в Бишкеке</h1>
-        <h2>Мы создаём бренды, которые запоминаются</h2>
+        <img src="media/logo/logo-no-text-white.svg" alt="MURAS BRAND STUDIO - производство полного цикла" class="hero-logo-main" width="200" height="200" loading="eager">
+        <h1>BRAND STUDIO</h1>
+        <span>Бренд - реаклама - креатив</span>
+        <h2>Печать UV DTF, DTF и Брендирование в Бишкеке</h2>
+        <h3>Мы создаём бренды, которые запоминаются</h3>
         <p>От идеи до готового продукта — дизайн, печать и производство в одном месте.
             Брендирование, наружная реклама, корпоративные подарки и фирменный стиль — всё под ключ.
         </p>
@@ -225,106 +229,71 @@
                 <p class="section-subtitle">Реальные проекты по UV DTF печати и брендированию в Бишкеке и СНГ</p>
             </div>
             
-            <div class="portfolio-grid">
+            <div class="portfolio-grid" id="portfolioGrid">
                 <article class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
                         <img src="media/muras03.jpg" alt="Вывеска для IT-компании UV DTF на нержавеющей стали" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Вывеска для IT-компании</h3>
-                                <p>UV DTF на нержавеющей стали • 500×200 мм</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
                     </div>
                 </article>
                 
                 <article class="portfolio-item" data-category="textile">
                     <div class="portfolio-image">
                         <img src="media/muras04.jpg" alt="Корпоративная одежда DTF печать на футболках Бишкек" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Корпоративная одежда</h3>
-                                <p>Термотрансферы на полиэстере • 500 шт.</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
                     </div>
                 </article>
                 
                 <article class="portfolio-item" data-category="automotive">
                     <div class="portfolio-image">
                         <img src="media/muras05.jpg" alt="Брендирование автомобилей UV DTF пленкой Бишкек" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Брендинг автопарка</h3>
-                                <p>UV DTF на кузове • 15 автомобилей</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
-                    </div>
                 </article>
                 
                 <article class="portfolio-item" data-category="souvenirs">
                     <div class="portfolio-image">
                         <img src="media/muras06.jpg" alt="Корпоративные кружки с логотипом UV DTF печать Бишкек" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Корпоративные подарки</h3>
-                                <p>UV DTF на керамике • 200 кружек</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
                     </div>
                 </article>
                 
                 <article class="portfolio-item" data-category="industrial">
                     <div class="portfolio-image">
                         <img src="media/muras08.jpg" alt="Промышленная маркировка UV DTF на алюминии Бишкек" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Промышленная маркировка</h3>
-                                <p>UV DTF на алюминии • Серия из 50 табличек</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
                     </div>
                 </article>
                 
                 <article class="portfolio-item" data-category="branding">
                     <div class="portfolio-image">
                         <img src="media/muras07.jpg" alt="Наружная реклама световые короба UV DTF на акриле Бишкек" class="portfolio-img" width="400" height="280" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <h3>Наружная реклама</h3>
-                                <p>UV DTF на акриле • 2×1 м световые короба</p>
-                            </div>
-                            <button class="portfolio-zoom" aria-label="Увеличить изображение">
-                                <img src="media/icons/search.png" alt="Увеличить" width="20" height="20">
-                            </button>
-                        </div>
+                    </div>
+                </article>
+
+                <!-- Дополнительные скрытые элементы -->
+                <article class="portfolio-item portfolio-item-hidden" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="media/muras03.jpg" alt="Дополнительная работа 1" class="portfolio-img" width="400" height="280" loading="lazy">
+                    </div>
+                </article>
+                
+                <article class="portfolio-item portfolio-item-hidden" data-category="textile">
+                    <div class="portfolio-image">
+                        <img src="media/muras04.jpg" alt="Дополнительная работа 2" class="portfolio-img" width="400" height="280" loading="lazy">
+                    </div>
+                </article>
+                
+                <article class="portfolio-item portfolio-item-hidden" data-category="automotive">
+                    <div class="portfolio-image">
+                        <img src="media/muras05.jpg" alt="Дополнительная работа 3" class="portfolio-img" width="400" height="280" loading="lazy">
                     </div>
                 </article>
             </div>
             
-            <div style="text-align: center; margin-top: 60px;">
+            <div style="text-align: center; margin-top: 60px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button id="showMoreBtn" class="cta-btn cta-btn-secondary" onclick="togglePortfolio()">Показать больше работ</button>
                 <a href="#contact" class="cta-btn">Обсудить ваш проект</a>
             </div>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us" id="calculator">
+    <section class="about-us" id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">О MURAS BRAND STUDIO - Печать и Брендирование в Бишкеке</h2>
@@ -437,7 +406,7 @@
                 </div>
                 
                 <div class="contact-form">
-                    <h3 style="margin-bottom: 24px; color: white;">Техническая консультация по UV DTF печати</h3>
+                    <h3 class="contact-form-title">Техническая консультация по UV DTF печати</h3>
                     <form aria-label="Форма обратной связи">
                         <div class="form-group">
                             <label for="name">Ваше имя</label>
@@ -513,5 +482,6 @@
 ]
 }
 </script>
+
 </body>
 </html>

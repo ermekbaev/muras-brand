@@ -55,9 +55,9 @@
 }
 
 @font-face {
-  font-family: "Mller";
-  src: url("./Muller/Mller.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Muller";
+  src: url("./Muller/MULLERDEMO-EXTRABOLD.otf") format("opentype");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -84,7 +84,7 @@ section {
   border: none;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -92,13 +92,13 @@ h5,
 h6,
 a {
   font-family: "Mller", sans-serif;
-}
+} */
 
-p,
+/* p,
 label,
 span {
   font-family: "Akrobat";
-}
+} */
 
 .line {
   width: 100%;
@@ -148,8 +148,9 @@ span {
 .nav-menu a {
   text-decoration: none;
   color: #fff;
+  font-family: "Muller", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   transition: color 0.2s ease;
 }
 
@@ -164,10 +165,11 @@ span {
 }
 
 .phone {
+  font-family: "Muller", sans-serif;
+  font-size: 15px;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
 }
 
 .cta-btn {
@@ -176,8 +178,9 @@ span {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: "Muller", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -242,7 +245,7 @@ span {
   align-items: center;
   justify-content: center;
   color: white;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .hero-equipment {
@@ -259,17 +262,42 @@ span {
   padding: 0 20px;
 }
 
-.hero h1 {
-  font-size: 60px;
-  margin-bottom: 24px;
+.hero-content h1 {
+  font-family: "Muller", sans-serif;
+  font-size: 52px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.hero-content h2 {
+  font-family: "Muller", sans-serif;
+  font-size: 35px;
+  letter-spacing: -1px;
+  margin-top: 28px;
+}
+
+.hero-content h3 {
+  font-family: "Muller", sans-serif;
+  font-size: 26px;
   letter-spacing: -1px;
 }
 
-.hero-logo,
-.hero-logo-service {
-  margin-bottom: 20px;
+.hero-content span {
+  font-family: "Muller", sans-serif;
+  font-size: 23px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
 
+.hero-logo,
+.hero-logo-service,
+.hero-logo-main {
   max-width: 340px;
+}
+
+.hero-logo-main {
+  height: 160px;
 }
 
 .hero-logo-service {
@@ -281,11 +309,12 @@ span {
   font-weight: 500;
 }
 
-.hero p {
+.hero-content p {
+  font-family: "Akrobat", sans-serif;
   font-size: 20px;
+  font-weight: 300;
   opacity: 0.8;
   margin-bottom: 48px;
-  font-weight: 300;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -407,12 +436,23 @@ span {
   margin: 60px auto;
 }
 
+.container h2 {
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+}
+
+.container p {
+  font-family: "Akrobat", sans-serif;
+  font-weight: 300;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 80px;
 }
 
 .section-title {
+  font-family: "Muller", sans-serif;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 16px;
@@ -422,6 +462,7 @@ span {
 }
 
 .section-title2 {
+  font-family: "Muller", sans-serif;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 16px;
@@ -430,6 +471,7 @@ span {
 }
 
 .section-subtitle {
+  font-family: "Muller", sans-serif;
   font-size: 20px;
   color: #fff;
   font-weight: 300;
@@ -508,6 +550,7 @@ span {
 }
 
 .process-number {
+  font-family: "Muller", sans-serif;
   color: #881df2;
   font-size: 14px;
   font-weight: 600;
@@ -515,12 +558,14 @@ span {
 }
 
 .process-title {
+  font-family: "Muller", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #fff;
 }
 
 .process-description {
+  font-family: "Akrobat", sans-serif;
   color: #cbc1c1;
   font-size: 16px;
   line-height: 1.6;
@@ -570,10 +615,24 @@ span {
   border: 4px solid #881df2;
 }
 
-.portfolio-item.hidden {
-  opacity: 0;
-  transform: scale(0.8);
-  pointer-events: none;
+.portfolio-item-hidden {
+  display: none;
+}
+
+.portfolio-item-hidden.show {
+  display: block;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .portfolio-image {
@@ -614,6 +673,7 @@ span {
 
 .portfolio-info h3 {
   color: white;
+  font-family: "Muller", sans-serif;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 4px;
@@ -621,6 +681,7 @@ span {
 
 .portfolio-info p {
   color: #ccc;
+  font-family: "Akrobat", sans-serif;
   font-size: 14px;
 }
 
@@ -649,7 +710,7 @@ span {
 }
 
 /* Portfolio Modal */
-.portfolio-modal {
+/* .portfolio-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -674,12 +735,14 @@ span {
 }
 
 .portfolio-modal-content h3 {
+  font-family: "Muller", sans-serif;
   margin-bottom: 10px;
 }
 
 .portfolio-modal-content p {
   margin: 10px 0;
   color: #666;
+  font-family: "Akrobat", sans-serif;
 }
 
 .portfolio-modal-content p:last-child {
@@ -694,7 +757,7 @@ span {
   to {
     opacity: 1;
   }
-}
+} */
 
 /* Notification */
 .notification {
@@ -786,6 +849,11 @@ span {
   transform: scale(1.5);
 }
 
+.equipment-img {
+  height: 100%;
+  border-radius: 8px;
+}
+
 /* About Us Section */
 .about-us {
   padding: 0 40px;
@@ -799,10 +867,11 @@ span {
 }
 
 .about-intro p {
+  font-family: "Akrobat", sans-serif;
   font-size: 20px;
+  font-weight: 300;
   line-height: 1.8;
   color: #e0e0e0;
-  font-weight: 300;
 }
 
 .about-features {
@@ -810,6 +879,7 @@ span {
 }
 
 .about-subtitle {
+  font-family: "Muller", sans-serif;
   font-size: 36px;
   font-weight: 400;
   text-align: center;
@@ -818,7 +888,6 @@ span {
 
 .features-title {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
   margin-bottom: 48px;
@@ -859,6 +928,7 @@ span {
 }
 
 .feature-card h4 {
+  font-family: "Muller", sans-serif;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 12px;
@@ -866,10 +936,11 @@ span {
 }
 
 .feature-card p {
+  font-family: "Akrobat", sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.6;
   color: #ccc;
-  font-weight: 300;
 }
 
 .about-mission {
@@ -894,12 +965,14 @@ span {
 }
 
 .mission-card h3 {
+  font-family: "Muller", sans-serif;
   font-size: 28px;
   margin-bottom: 16px;
   color: #fff;
 }
 
 .mission-card p {
+  font-family: "Akrobat", sans-serif;
   font-size: 18px;
   line-height: 1.7;
   color: #f0f0f0;
@@ -926,10 +999,19 @@ span {
 }
 
 .contact-info h2 {
+  font-family: "Muller", sans-serif;
   font-size: 48px;
   font-weight: 300;
   margin-bottom: 16px;
   letter-spacing: -1px;
+}
+
+.contact-info p {
+  font-family: "Akrobat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ccc;
+  margin-bottom: 32px;
 }
 
 .contact-details {
@@ -945,6 +1027,7 @@ span {
   gap: 20px;
   color: #ccc;
   text-decoration: none;
+  font-family: "Akrobat", sans-serif;
 }
 
 .contact-icon {
@@ -958,6 +1041,12 @@ span {
   border-radius: 8px;
 }
 
+.contact-form-title {
+  font-family: "Muller", sans-serif;
+  margin-bottom: 24px;
+  color: white;
+}
+
 .form-group {
   margin-bottom: 24px;
 }
@@ -965,8 +1054,9 @@ span {
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-size: 14px;
   color: #ccc;
+  font-size: 14px;
+  font-family: "Muller", sans-serif;
 }
 
 .form-group input,
@@ -977,8 +1067,9 @@ span {
   border-radius: 6px;
   background: #222;
   color: white;
-  font-size: 16px;
   transition: border-color 0.2s ease;
+  font-size: 16px;
+  font-family: "Akrobat", sans-serif;
 }
 
 .form-group input:focus,
@@ -1028,6 +1119,7 @@ span {
 }
 
 .spec-content h3 {
+  font-family: "Muller", sans-serif;
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 24px;
@@ -1036,6 +1128,7 @@ span {
 }
 
 .spec-content p {
+  font-family: "Akrobat", sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #999;
@@ -1062,6 +1155,7 @@ span {
 }
 
 .spec-label {
+  font-family: "Akrobat", sans-serif;
   color: #cbc1c1;
   font-size: 16px;
 }
@@ -1076,7 +1170,6 @@ span {
 }
 
 .spec-visual {
-  background: #f8f8f8;
   border-radius: 8px;
   height: 400px;
   display: flex;
@@ -1085,7 +1178,8 @@ span {
   font-size: 14px;
   color: #666;
   overflow: hidden;
-  border: 6px solid #881df2;
+  border: 1px solid #881df2;
+  background: linear-gradient(135deg, #881df273 0%, #6c16c76c 100%);
 }
 
 /* Breadcrumbs */
@@ -1116,6 +1210,7 @@ span {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  font-family: "Muller", sans-serif;
 }
 
 .breadcrumb-link:hover {
@@ -1139,12 +1234,25 @@ span {
   color: #333;
 }
 
+@media (max-width: 1600px) {
+  .spec-grid[data-animation="left"],
+  .spec-grid[data-animation="right"] {
+    transform: translateY(50px);
+  }
+
+  .spec-grid[data-animation="left"].animate,
+  .spec-grid[data-animation="right"].animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Планшеты (до 1024px) */
 @media (max-width: 1024px) {
   /* Фон */
   body {
-    background-size: auto;
-    background-position: center;
+    background-image: url(./media/bg-body-mini.jpg);
+    overflow-x: hidden;
   }
 
   /* Навигация */
@@ -1304,11 +1412,6 @@ span {
 
 /* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
-  /* Фон для мобильных */
-  body {
-    background-size: cover;
-  }
-
   /* Навигация */
   .logo-img {
     width: 50px;
