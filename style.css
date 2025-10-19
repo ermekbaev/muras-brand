@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "Muller";
-  src: url("Muller/MULLERDEMO-EXTRABOLD.otf") format("opentype");
+  src: url("Muller/MULLERDEMO-EXTRABOLD.OTF") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
