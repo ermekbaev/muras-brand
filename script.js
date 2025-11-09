@@ -32,7 +32,6 @@ function openVideoModal(videoSrc) {
   modalVideo.load();
   modal.classList.add("active");
 
-  // Автоматически воспроизводим видео
   modalVideo.play();
 }
 
