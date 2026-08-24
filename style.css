@@ -291,8 +291,8 @@ section {
 }
 
 .hero-logo-main {
-  max-width: 200px;
-  height: 160px;
+  max-width: 170px;
+  height: auto;
 }
 
 /* FIXED: Фиксированный размер вместо процентного */
